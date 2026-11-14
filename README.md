@@ -56,8 +56,6 @@
 ```bash 
    git clone https://github.com/coddemn/auth_module_with_YandexMail.git
 
-   cd asao_main_api
-
 ```
 
 2. Создайте файл `.env.docker` на основе шаблона:
