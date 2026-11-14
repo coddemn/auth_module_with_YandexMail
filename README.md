@@ -53,41 +53,40 @@
 
 1. Склонируйте репозиторий и перейдите в папку проекта:
 
-   ```bash
-   
+```bash 
    git clone https://github.com/coddemn/auth_module_with_YandexMail.git
 
    cd asao_main_api
-   
-   ```
+
+```
 
 2. Создайте файл `.env.docker` на основе шаблона:
 
-   ```bash
+```bash
 
    cp .env.docker.template .env.docker
 
-   ```
+```
 
    При необходимости отредактируйте значения `DB_USER`, `DB_PASS`, `DB_NAME`.
 
 3. Запустите проект:
 
-   ```bash
+```bash
 
    docker-compose --env-file .env.docker up --build
 
-   ```
+```
 
    Дождитесь сообщения `Application startup complete.`
 
 4. Примените миграции базы данных (в отдельном терминале):
 
-   ```bash
+```bash
 
    docker exec -it asao_api bash -c "cd src && alembic upgrade head"
 
-   ```
+```
 
 5. Откройте приложение в браузере:
 
